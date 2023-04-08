@@ -1,0 +1,81 @@
+html{
+    --heading-color: #374151;
+    --heading-text: #D1D5DB;
+    --heading-textsize: 100px;
+    --container-color: #E5E7EB;
+    --button-color: #6B7280;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+@font-face {
+    font-family: 'Godfather';
+    src: url(font\\godfather.ttf);
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(font\\opensans.ttf);
+}
+.heading{
+    background-color: var(--heading-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    font-size: var(--heading-textsize);
+    font-family: 'Godfather','Times New Roman', Times, serif;
+    color: var(--heading-text);
+}
+.container{
+    background-color: var(--container-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'OpenSans', 'Times New Roman';
+    font-size: 30px;
+
+}
+button{
+    height: 4rem;
+    width: 12rem;
+    background-color: var(--button-color);
+    border: 1px solid var(--heading-color);
+    border-radius: 8px;
+    color: var(--heading-text);
+    font-weight: bold;
+    font-family: 'OpenSans', 'Times New Roman';
+    font-size: 40px;
+}
+.game{
+    background-color: black;
+    display: grid;
+    grid-template: 120px 120px 120px/120px 120px 120px;
+    grid-gap: 1px;
+    border: 1px solid black;
+}
+.game-box{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+.game-status{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'OpenSans', 'Times New Roman';
+}
+.game-box:hover{
+    background-color: #E2E8F0;
+}
+button:hover{
+    background-color: #374151;
+}
